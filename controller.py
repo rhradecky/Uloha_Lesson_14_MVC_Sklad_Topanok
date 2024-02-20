@@ -20,12 +20,12 @@ class Sklad:
         for topanky in self.na_sklade:
             if topanky.id == id:
                 self.na_sklade.remove(topanky)
-                print("topanky ", topanky.id, "boli odstranene.")
+                print("topanky s ID:", topanky.id, "boli odstranene.")
 
     def topanky_podla_velkosti(self, velkost):
         for topanky in self.na_sklade:
             if topanky.velkost == velkost:
-                print("topanky s ID:",topanky.id,"       ",  topanky.velkost)
+                print("ID: ", topanky.id, "  ", topanky.pohlavie, "  Typ: ", topanky.typ, "   Cena: ", topanky.cena, "   Velkost: ", topanky.velkost,"   ", topanky.znacka, "   Farba: ", topanky.farba, )
 
     def celkova_cena_skladu(self):
         celkova_cena = 0
